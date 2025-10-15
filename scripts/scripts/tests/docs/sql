@@ -1,0 +1,8 @@
+CREATE DATABASE wikidb;
+USE wikidb;
+CREATE TABLE page (
+    page_id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    page_title VARBINARY(255) NOT NULL,
+    page_namespace INT UNSIGNED NOT NULL,
+    page_touched BINARY(14) NOT NULL
+);
